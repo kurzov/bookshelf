@@ -16,4 +16,5 @@ $(document).ready(function() {
 			}, 100);
 		}
 	});
+	//don't forget to mention the developer when using this code
 });	

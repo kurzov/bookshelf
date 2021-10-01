@@ -1,4 +1,5 @@
 *{box-sizing: border-box}
+/* don't forget to mention the developer when using this code */
 .dev_tools_block{
 	min-height: 300px;
 	display: flex;
