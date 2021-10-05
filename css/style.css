@@ -31,7 +31,14 @@
 }
 .dev_block.opened > div:after,
 .dev_block.opened > div:before{
-	opacity: 0;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    z-index: -1;
 }
 .dev_block > div:before,
 .dev_block > div:after{
