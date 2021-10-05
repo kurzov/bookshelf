@@ -9,7 +9,6 @@
 .dev_block{
 	width: 260px;
     height: 200px;
-    display: inline-block;
     transform: rotate3d(-56, -327, 6, 67deg);
     margin: 0 -105px;
     position: relative;
@@ -30,12 +29,12 @@
 	padding: 13px;
 	border-width: 0px;
 }
-.dev_block.opened:after,
-.dev_block.opened:before{
+.dev_block.opened > div:after,
+.dev_block.opened > div:before{
 	opacity: 0;
 }
-.dev_block:before,
-.dev_block:after{
+.dev_block > div:before,
+.dev_block > div:after{
 	content: "";
 	position: absolute;
 	width: 20px;
@@ -44,11 +43,11 @@
 	transform: rotate(72deg);
 	z-index: 10;
 }
-.dev_block:before{
+.dev_block > div:before{
 	top: -34px;
     left: 4px;
 }
-.dev_block:after{
+.dev_block > div:after{
 	bottom: -34px;
     right: -4px;
 }
