@@ -42,6 +42,7 @@
     height: 70px;
     background-color: #fff;
 	transform: rotate(72deg);
+	z-index: 10;
 }
 .dev_block:before{
 	top: -34px;
