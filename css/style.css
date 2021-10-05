@@ -19,17 +19,37 @@
 .dev_block:hover{
 	transform: rotate3d(-56, -327, 6, 67deg) translateX(50px);
 }
-.dev_block.active,
-.dev_block.active:hover{
+.dev_block.active.opened,
+.dev_block.active.opened:hover{
 	transform: rotate3d(0, 0, 0, 0deg) translateX(200px);
-	top: 100px!important;
-	z-index: 999!important;
+	top: 100px;
+	z-index: 999;
 }
-.dev_block.active > div,
-.dev_block.active:hover > div{
+.dev_block.active.opened > div,
+.dev_block.active.opened:hover > div{
 	padding: 13px;
 	border-width: 0px;
-	border-radius: 0;
+}
+.dev_block.opened:after,
+.dev_block.opened:before{
+	opacity: 0;
+}
+.dev_block:before,
+.dev_block:after{
+	content: "";
+	position: absolute;
+	width: 20px;
+    height: 70px;
+    background-color: #fff;
+	transform: rotate(72deg);
+}
+.dev_block:before{
+	top: -34px;
+    left: 4px;
+}
+.dev_block:after{
+	bottom: -34px;
+    right: -4px;
 }
 .dev_block > div{
 	width: 100%;
@@ -37,7 +57,6 @@
     border-top: 13px solid;
     border-right: 34px solid;
 	color: #fff;
-	border-radius: 20px;
 }
 .dev_block.text-black > div{
 	color: #000;
